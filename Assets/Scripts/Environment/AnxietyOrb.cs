@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class AnxietyOrb : MonoBehaviour, IInteractable
 {
@@ -13,11 +14,20 @@ public class AnxietyOrb : MonoBehaviour, IInteractable
     public float dissolveSpeed = 1f;
     private SpriteRenderer sr;
 
+    [Header("Particles")]
+    public ParticleSystem unhealedParticles;
+    public ParticleSystem healedParticles;
+    public float fadeDuration = 1.5f;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
+
+        // Start state
+        unhealedParticles.gameObject.SetActive(true);
+        healedParticles.gameObject.SetActive(false);
     }
 
     void Update()
@@ -30,10 +40,13 @@ public class AnxietyOrb : MonoBehaviour, IInteractable
 
             if (c.a <= 0.05f)
             {
-                Destroy(gameObject);
+                sr.enabled = false;      // hide sprite only
+                isHealing = false;       // stop update loop
+                this.enabled = false;    // disable script
             }
         }
     }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -67,8 +80,43 @@ public class AnxietyOrb : MonoBehaviour, IInteractable
     {
         isHealing = true;
         animator.SetBool("healing", true);
-        Debug.Log("Healed ,  anxietyOrb");
         progressionManager.ObjectHealed();
         audioSource.Stop();
+
+        StartCoroutine(FadeParticles());
+    }
+
+    IEnumerator FadeParticles()
+    {
+        healedParticles.gameObject.SetActive(true);
+
+        ParticleSystem.MainModule unhealedMain = unhealedParticles.main;
+        ParticleSystem.MainModule healedMain = healedParticles.main;
+
+        Color unhealedColor = unhealedMain.startColor.color;
+        Color healedColor = healedMain.startColor.color;
+
+        float time = 0;
+
+        while (time < fadeDuration)
+        {
+            time += Time.deltaTime;
+            float t = time / fadeDuration;
+
+            // fade OUT unhealed
+            Color u = unhealedColor;
+            u.a = Mathf.Lerp(1f, 0f, t);
+            unhealedMain.startColor = u;
+
+            // fade IN healed
+            Color h = healedColor;
+            h.a = Mathf.Lerp(0f, 1f, t);
+            healedMain.startColor = h;
+
+            yield return null;
+        }
+
+        // final state
+        unhealedParticles.gameObject.SetActive(false);
     }
 }
