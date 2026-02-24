@@ -20,11 +20,6 @@ public class HeatSystem : MonoBehaviour
     public Color calmColor = new Color(1f, 0.8f, 0.4f);
     public Color angryColor = new Color(1f, 0.2f, 0.1f);
     
-    [Header("Lava Visual")]
-    public SpriteRenderer lavaRenderer;
-    public Color coolLavaColor = new Color(0.5f, 0.2f, 0.2f);
-    public Color hotLavaColor = new Color(1f, 0.3f, 0.1f);
-    
     [Header("Camera Shake")]
     public Transform cameraTransform;
     public float shakeAmount = 0.1f;
@@ -55,7 +50,6 @@ public class HeatSystem : MonoBehaviour
         heatLevel = Mathf.Clamp01(heatLevel);
         
         UpdateRumble();
-        UpdateLavaVisual();
         UpdatePlayerGlow();
         UpdateCameraShake();
     }
@@ -66,6 +60,11 @@ public class HeatSystem : MonoBehaviour
         {
             rumbleSource.volume = heatLevel * maxVolume;
         }
+    }
+
+    public float GetHeatLevel()
+    {
+        return heatLevel;
     }
 
     void UpdateCameraShake()
@@ -95,13 +94,6 @@ public class HeatSystem : MonoBehaviour
         }
     }
     
-    void UpdateLavaVisual()
-    {
-        if (lavaRenderer != null)
-        {
-            lavaRenderer.color = Color.Lerp(coolLavaColor, hotLavaColor, heatLevel);
-        }
-    }
 
     [Header("Volcano Progression")]
     public int calmTargetsRequired = 3;
