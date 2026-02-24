@@ -1,9 +1,10 @@
+using ClearSky;
 using UnityEngine;
 
 public class OceanMovementModifier : MonoBehaviour
 {
     public Rigidbody2D playerRb;
-    public PlayerController playerController;
+    public SimplePlayerController playerController;
 
     [Header("Underwater Settings")]
     public float underwaterGravityScale = 0.5f;
@@ -17,15 +18,15 @@ public class OceanMovementModifier : MonoBehaviour
     void Start()
     {
         normalGravity = playerRb.gravityScale;
-        normalMoveSpeed = playerController.moveSpeed;
-        normalJumpForce = playerController.jumpForce;
+        normalMoveSpeed = playerController.movePower;
+        normalJumpForce = playerController.jumpPower;
     }
 
     public void EnterWater()
     {
         playerRb.gravityScale = underwaterGravityScale;
-        playerController.moveSpeed = underwaterMoveSpeed;
-        playerController.jumpForce = underwaterJumpForce;
+        playerController.movePower = underwaterMoveSpeed;
+        playerController.jumpPower = underwaterJumpForce;
 
         Debug.Log("Entered Water - Heavy Movement Applied");
     }
@@ -33,8 +34,8 @@ public class OceanMovementModifier : MonoBehaviour
     public void ExitWater()
     {
         playerRb.gravityScale = normalGravity;
-        playerController.moveSpeed = normalMoveSpeed;
-        playerController.jumpForce = normalJumpForce;
+        playerController.movePower = normalMoveSpeed;
+        playerController.jumpPower = normalJumpForce;
 
         Debug.Log("Exited Water - Normal Movement Restored");
     }
