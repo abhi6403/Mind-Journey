@@ -3,8 +3,8 @@ using UnityEngine;
 public class LavaPlatform : MonoBehaviour
 {
     public HeatSystem heatSystem;
-    private BoxCollider2D col;
-    private SpriteRenderer sr;
+    [SerializeField] private BoxCollider2D col;
+    [SerializeField] private SpriteRenderer sr;
 
     void Start()
     {
