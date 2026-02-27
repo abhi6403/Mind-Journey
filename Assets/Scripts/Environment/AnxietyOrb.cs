@@ -4,8 +4,7 @@ using System.Collections;
 public class AnxietyOrb : MonoBehaviour, IInteractable
 {
     public ForestProgressionManager progressionManager;
-
-    private Animator animator;
+    
     private AudioSource audioSource;
     private bool playerNear = false;
     private bool isHealing = false;
@@ -21,7 +20,6 @@ public class AnxietyOrb : MonoBehaviour, IInteractable
 
     void Start()
     {
-        animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
 
@@ -53,8 +51,6 @@ public class AnxietyOrb : MonoBehaviour, IInteractable
         if (other.CompareTag("Player"))
         {
             playerNear = true;
-            animator.SetBool("playerNear", true);
-            audioSource.Play();
         }
     }
 
@@ -63,8 +59,6 @@ public class AnxietyOrb : MonoBehaviour, IInteractable
         if (other.CompareTag("Player"))
         {
             playerNear = false;
-            animator.SetBool("playerNear", false);
-            audioSource.Stop();
         }
     }
 
@@ -79,10 +73,10 @@ public class AnxietyOrb : MonoBehaviour, IInteractable
     void CalmOrb()
     {
         isHealing = true;
-        animator.SetBool("healing", true);
         progressionManager.ObjectHealed();
         audioSource.Stop();
 
+        Debug.Log("Calm Orb");
         StartCoroutine(FadeParticles());
     }
 

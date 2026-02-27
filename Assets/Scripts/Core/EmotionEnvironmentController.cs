@@ -7,7 +7,7 @@ public class EmotionEnvironmentController : MonoBehaviour
     public Light2D globalLight;
     public Color anxiousColor = new Color(0.4f, 0.5f, 0.7f);
     public Color calmColor = new Color(0.8f, 0.75f, 0.6f);
-
+    
     [Header("Fog Parent")]
     public GameObject fogGroup;
 
@@ -16,19 +16,22 @@ public class EmotionEnvironmentController : MonoBehaviour
     public AudioClip anxiousAmbience;
     public AudioClip calmAmbience;
 
+    [Header("Progress Settings")]
+    public int totalHealTargets = 13;
+
     private int healedCount = 0;
-    public int totalHealTargets = 3;
+    private bool calmAudioPlayed = false;
 
     void Start()
     {
         SetAnxietyState();
     }
 
-    public void OnObjectHealed()
+    public void OnObjectHealed(int currentHealCount)
     {
-        healedCount++;
+        healedCount = currentHealCount;
 
-        float progress = (float)healedCount / totalHealTargets;
+        float progress = Mathf.Clamp01((float)healedCount / totalHealTargets);
 
         UpdateLighting(progress);
         UpdateAudio(progress);
@@ -37,22 +40,37 @@ public class EmotionEnvironmentController : MonoBehaviour
 
     void SetAnxietyState()
     {
-        globalLight.color = anxiousColor;
-        ambientSource.clip = anxiousAmbience;
-        ambientSource.Play();
+        if (globalLight != null)
+            globalLight.color = anxiousColor;
+
+        if (ambientSource != null && anxiousAmbience != null)
+        {
+            ambientSource.clip = anxiousAmbience;
+            ambientSource.loop = true;
+            ambientSource.Play();
+        }
     }
 
     void UpdateLighting(float progress)
     {
-        globalLight.color = Color.Lerp(anxiousColor, calmColor, progress);
+        if (globalLight != null)
+            globalLight.color = Color.Lerp(anxiousColor, calmColor, progress);
     }
 
     void UpdateAudio(float progress)
     {
-        if (progress > 0.6f)
+        if (ambientSource == null) return;
+
+        if (progress > 0.6f && !calmAudioPlayed)
         {
-            ambientSource.clip = calmAmbience;
-            ambientSource.Play();
+            calmAudioPlayed = true;
+
+            if (calmAmbience != null)
+            {
+                ambientSource.clip = calmAmbience;
+                ambientSource.loop = true;
+                ambientSource.Play();
+            }
         }
     }
 
@@ -61,8 +79,8 @@ public class EmotionEnvironmentController : MonoBehaviour
         if (fogGroup != null)
         {
             fogGroup.transform.localScale = Vector3.Lerp(
-                new Vector3(1.2f,1.2f,1),
-                new Vector3(0.8f,0.8f,1),
+                new Vector3(1.2f, 1.2f, 1f),
+                new Vector3(0.8f, 0.8f, 1f),
                 progress
             );
         }

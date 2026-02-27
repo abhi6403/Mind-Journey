@@ -12,6 +12,11 @@ public class WhisperTree : MonoBehaviour, IInteractable
     [Header("Fade Particle Effect")]
     public ParticleSystem fadeParticles;
 
+    [Header("Audio Clips")]
+    public AudioClip triggerEnterClip;
+    public AudioClip healingClip;
+    public AudioClip healedClip;
+
     private Animator animator;
     private AudioSource whisperAudio;
     private bool playerInside = false;
@@ -24,7 +29,6 @@ public class WhisperTree : MonoBehaviour, IInteractable
         animator = GetComponent<Animator>();
         whisperAudio = GetComponent<AudioSource>();
 
-        // 🔹 Setup object invisibility
         if (objectToAppear != null)
         {
             appearRenderer = objectToAppear.GetComponent<SpriteRenderer>();
@@ -34,7 +38,6 @@ public class WhisperTree : MonoBehaviour, IInteractable
             appearRenderer.color = color;
         }
 
-        // 🔹 Make sure particles are OFF at start
         if (fadeParticles != null)
         {
             fadeParticles.Stop();
@@ -48,7 +51,9 @@ public class WhisperTree : MonoBehaviour, IInteractable
         {
             playerInside = true;
             animator.SetBool("playerNear", true);
-            whisperAudio.Play();
+
+            if (triggerEnterClip != null)
+                whisperAudio.PlayOneShot(triggerEnterClip);
         }
     }
 
@@ -58,7 +63,6 @@ public class WhisperTree : MonoBehaviour, IInteractable
         {
             playerInside = false;
             animator.SetBool("playerNear", false);
-            whisperAudio.Stop();
         }
     }
 
@@ -66,6 +70,9 @@ public class WhisperTree : MonoBehaviour, IInteractable
     {
         if (playerInside && !healed)
         {
+            if (healingClip != null)
+                whisperAudio.PlayOneShot(healingClip);
+
             HealTree();
         }
     }
@@ -73,15 +80,17 @@ public class WhisperTree : MonoBehaviour, IInteractable
     void HealTree()
     {
         healed = true;
+
         animator.SetBool("healed", true);
 
-        whisperAudio.Stop();
-        progressionManager.ObjectHealed();
+        if (healedClip != null)
+            whisperAudio.PlayOneShot(healedClip);
+
+        if (progressionManager != null)
+            progressionManager.ObjectHealed();
 
         if (objectToAppear != null)
-        {
             StartCoroutine(FadeInObject());
-        }
     }
 
     IEnumerator FadeInObject()
@@ -89,7 +98,6 @@ public class WhisperTree : MonoBehaviour, IInteractable
         float timer = 0f;
         Color color = appearRenderer.color;
 
-        // 🔥 Turn ON particles when fade starts
         if (fadeParticles != null)
         {
             fadeParticles.gameObject.SetActive(true);
@@ -107,11 +115,9 @@ public class WhisperTree : MonoBehaviour, IInteractable
             yield return null;
         }
 
-        // Ensure fully visible
         color.a = 1f;
         appearRenderer.color = color;
 
-        // 🔥 Turn OFF particles after fade completes
         if (fadeParticles != null)
         {
             fadeParticles.Stop();

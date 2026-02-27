@@ -7,6 +7,8 @@ public class PlayerLight : MonoBehaviour
     public Transform lightSpawnPoint;
     public float lightRadius = 3f;
     public LayerMask interactLayer;
+    public AudioClip lightSound;
+    public AudioSource audioSource;
 
     void Update()
     {
@@ -18,6 +20,10 @@ public class PlayerLight : MonoBehaviour
 
     void EmitLight()
     {
+        if (lightSound != null)
+        {
+            audioSource.PlayOneShot(lightSound);
+        }
         // Spawn visual light pulse
         Instantiate(lightPulsePrefab, lightSpawnPoint.position, Quaternion.identity);
 
