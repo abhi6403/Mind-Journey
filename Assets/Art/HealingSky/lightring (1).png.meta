@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lightring (1)_0: -2035146498983105475
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

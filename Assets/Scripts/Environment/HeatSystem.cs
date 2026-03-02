@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,6 +9,10 @@ public class HeatSystem : MonoBehaviour
     public Rigidbody2D playerRb;
     public SpriteRenderer chestGlow;
 
+    public Transform targetPosition;
+    public float moveDuration = 2f;
+    private bool hasMoved = false;
+    
     [Header("Heat Settings")]
     public float speedThreshold = 4f;
     public float heatIncreaseRate = 1f;
@@ -71,7 +76,7 @@ public class HeatSystem : MonoBehaviour
     {
         if (cameraTransform == null) return;
 
-        if (heatLevel > 0.6f)
+        if (heatLevel == 1f)
         {
             float shake = shakeAmount * heatLevel;
             cameraTransform.localPosition = originalCamPos + Random.insideUnitSphere * shake;
@@ -121,4 +126,23 @@ public class HeatSystem : MonoBehaviour
             cooledPath.SetActive(true);
     }
 
+    IEnumerator MoveObject()
+    {
+        Vector3 startPosition = playerRb.position;
+        Vector3 endPosition = targetPosition.position;
+
+        float timer = 0f;
+
+        while (timer < moveDuration)
+        {
+            timer += Time.deltaTime;
+            float t = timer / moveDuration;
+
+            playerRb.position = Vector3.Lerp(startPosition, endPosition, t);
+            hasMoved = false;
+            yield return null;
+        }
+
+        playerRb.position = endPosition;
+    }
 }

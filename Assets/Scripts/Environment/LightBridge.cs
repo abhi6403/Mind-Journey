@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class LightBridge : MonoBehaviour
 {
     private Animator animator;
+    public string sceneToLoad;
     private BoxCollider2D col;
     public BoxCollider2D box;
 
@@ -25,6 +26,6 @@ public class LightBridge : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("Level_Volcano");
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

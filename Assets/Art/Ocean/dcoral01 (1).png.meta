@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dcoral01 (1)_0: 3080321603833133731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

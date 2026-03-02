@@ -6,6 +6,8 @@ public class RagePillar : MonoBehaviour
     public GameObject fireObject;   // parent object of particle system
     public HeatSystem heatSystem;
 
+    public GameObject blocker;
+    
     [Header("Calm Settings")]
     public float calmTimeRequired = 2f;
     private float calmTimer = 0f;
@@ -36,6 +38,7 @@ public class RagePillar : MonoBehaviour
                 if (calmTimer >= calmTimeRequired)
                 {
                     Debug.Log("Player wait time completed. Calming pillar.");
+                    blocker.SetActive(false);
                     CalmPillar();
                 }
             }
