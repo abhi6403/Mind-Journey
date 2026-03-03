@@ -32271,7 +32271,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You have entered the anger state '
+  m_text: "Level 2 \u2013 The Volcano\r\n\r\nThis level represents Anger.\r\n\r\nThe
+    rising lava symbolizes emotional escalation.\r\n\r\nPsychology shows that impulsive
+    reactions\r\nincrease emotional intensity.\r\n\r\nSlowing movement reduces heat,\r\nreflecting
+    self-regulation.\r\n\r\nCalm behavior stabilizes the environment."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -38204,7 +38207,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -4
   m_Sprite: {fileID: 21300000, guid: b931a4022c8f35548b3c274f9912d9b4, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.9685534, g: 0.43554437, b: 0.43554437, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38287,10 +38290,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Be clam and slow when you are angry
+  m_text: 'The Volcano reflects emotional regulation theory.
 
-    If you rush then you will end
-    up like ashes'
+    
+
+    Anger intensifies
+    through rapid reaction.
+
+    It decreases through controlled response.
+
+    
+
+    The
+    mechanic of slowing down
+
+    represents behavioral self-control.
+
+    
+
+    The
+    cooled lava symbolizes regained stability.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -73974,7 +73993,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wait Till the anger cools down and then proceed
+  m_text: "Anger is natural.\r\n\r\nRegulation \u2014 not suppression \u2014\r\nrestores
+    balance."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
