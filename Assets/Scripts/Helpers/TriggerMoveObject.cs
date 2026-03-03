@@ -15,6 +15,7 @@ public class TriggerMoveObject : MonoBehaviour
 
     private void Start()
     {
+        hasMoved = false;
         audioSource = GetComponent<AudioSource>();
     }
 

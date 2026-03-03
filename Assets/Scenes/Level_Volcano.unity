@@ -32271,13 +32271,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Level 2 \u2013 The Volcano\r\n\r\nThis level represents Anger.\r\n\r\nThe
-    rising lava symbolizes emotional escalation.\r\n\r\nPsychology shows that impulsive
-    reactions\r\nincrease emotional intensity.\r\n\r\nSlowing movement reduces heat,\r\nreflecting
-    self-regulation.\r\n\r\nCalm behavior stabilizes the environment."
+  m_text: "Level 2 \u2013 The Volcano\r\nThis level represents Anger.\r\nThe rising
+    lava symbolizes emotional escalation.\r\nPsychology shows that impulsive reactions\r\nincrease
+    emotional intensity.\r\nSlowing movement reduces heat,\r\nreflecting self-regulation.\r\nCalm
+    behavior stabilizes the environment."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -32301,8 +32301,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -32311,8 +32311,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_characterSpacing: 4
+  m_wordSpacing: 4
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -32365,7 +32365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486debddd64e65342a5571e8ea327ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 2
+  fadeDuration: 8
   disableAfterFade: 1
 --- !u!225 &553645461
 CanvasGroup:
@@ -38268,7 +38268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486debddd64e65342a5571e8ea327ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 3
+  fadeDuration: 6
   disableAfterFade: 1
 --- !u!114 &708715283
 MonoBehaviour:
@@ -38292,27 +38292,23 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'The Volcano reflects emotional regulation theory.
 
-    
-
     Anger intensifies
     through rapid reaction.
 
     It decreases through controlled response.
 
-    
 
     The
     mechanic of slowing down
 
     represents behavioral self-control.
 
-    
 
-    The
-    cooled lava symbolizes regained stability.'
+    The cooled
+    lava symbolizes regained stability.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -38336,8 +38332,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -38346,8 +38342,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_characterSpacing: 4
+  m_wordSpacing: 4
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -39984,7 +39980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486debddd64e65342a5571e8ea327ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 3
+  fadeDuration: 2
   disableAfterFade: 1
 --- !u!114 &1006456937
 MonoBehaviour:
@@ -40008,8 +40004,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Be slow else you will start again
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -40033,8 +40029,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -40043,8 +40039,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_characterSpacing: 4
+  m_wordSpacing: 4
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -73927,7 +73923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1857393924
 RectTransform:
   m_ObjectHideFlags: 0
@@ -73971,7 +73967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486debddd64e65342a5571e8ea327ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 3
+  fadeDuration: 4
   disableAfterFade: 1
 --- !u!114 &1857393927
 MonoBehaviour:
@@ -73993,11 +73989,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Anger is natural.\r\n\r\nRegulation \u2014 not suppression \u2014\r\nrestores
+  m_text: "Anger is natural.\r\nRegulation \u2014 not suppression \u2014\r\nrestores
     balance."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -74021,8 +74017,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -74031,8 +74027,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_characterSpacing: 4
+  m_wordSpacing: 4
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0

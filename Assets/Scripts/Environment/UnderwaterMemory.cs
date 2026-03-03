@@ -12,6 +12,7 @@ public class UnderwaterMemory : MonoBehaviour
 
     private UnderwaterMovement movement;
 
+    public GameObject moveupParticleVFX;
     public OceanEnvironmentController environmentController;
 
     void Start()
@@ -41,8 +42,8 @@ public class UnderwaterMemory : MonoBehaviour
     {
         if (movement != null)
         {
-            movement.maxSpeed = Mathf.Lerp(3f, 1.2f, currentWeight / maxWeight);
-            movement.moveForce = Mathf.Lerp(5f, 2f, currentWeight / maxWeight);
+            movement.maxSpeed = Mathf.Lerp(20f, 1.2f, currentWeight / maxWeight);
+            movement.moveForce = Mathf.Lerp(15f, 2f, currentWeight / maxWeight);
         }
     }
 
@@ -67,5 +68,10 @@ public class UnderwaterMemory : MonoBehaviour
         currentWeight = 0f;
 
         ApplyWeightEffect();
+    }
+
+    public void EnableParticles()
+    {
+        moveupParticleVFX.SetActive(true);
     }
 }

@@ -14,7 +14,6 @@ namespace ClearSky
         bool isJumping = false;
         private bool alive = true;
 
-
         // Start is called before the first frame update
         void Start()
         {

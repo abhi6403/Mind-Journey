@@ -5,6 +5,7 @@ public class AscentZone : MonoBehaviour
     public float upwardForce = 5f;
 
     private bool active = false;
+    public UnderwaterMemory memory;
 
     public void ActivateZone()
     {
@@ -22,6 +23,7 @@ public class AscentZone : MonoBehaviour
             Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
+                memory.EnableParticles();
                 rb.AddForce(Vector2.up * upwardForce);
             }
         }
