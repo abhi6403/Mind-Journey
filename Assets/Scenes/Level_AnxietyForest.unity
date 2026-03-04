@@ -2289,7 +2289,7 @@ Transform:
   m_GameObject: {fileID: 468121228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -227.1, y: 0, z: 0}
+  m_LocalPosition: {x: -649, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4264,7 +4264,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Press Q to Heal Objects.\n Anxiety reduces when we stop avoiding\r\nand
-    begin confronting what we fear."
+    begin confronting what we fear.                           Facing fear is the
+    first step to calm."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -9850,7 +9851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486debddd64e65342a5571e8ea327ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 8
+  fadeDuration: 10
   disableAfterFade: 1
 --- !u!114 &2008064576
 MonoBehaviour:
@@ -9872,11 +9873,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Level 1 \u2013 The Forest\r\n\rThis level represents Anxiety.\r\n\rThe
-    whispers symbolize intrusive thoughts.\r\nThe darkness represents uncertainty.\r\n\rPsychologically,
-    anxiety grows through avoidance.\r\n\rMoving forward despite discomfort\r\nreflects
-    exposure \u2014 a method known to reduce fear.\r\n\rFacing the forest weakens
-    it."
+  m_text: "Level 1 \u2013 The Forest\r\n\rThis forest represents anxiety.\r\n\rThe
+    whispers are negative thoughts.\r\nThe darkness is uncertainty.\r\n\rAnxiety
+    grows when we avoid things.\r\nIt becomes weaker when we face them."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -10014,22 +10013,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Forest is based on the concept of exposure therapy.
-
-    Avoidance
-    strengthens anxiety.
-
-    Approach reduces it.
-
-
-    The healing tree represents
-    courage.
-
-    Interacting with it symbolizes facing fear directly.
-
-
-    Through
-    action, the environment becomes calmer.'
+  m_text: "The Forest shows how anxiety works.\r\n\rWhen we face what we fear,\r\nthe
+    mind slowly becomes quieter."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -10120,7 +10105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486debddd64e65342a5571e8ea327ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 6
+  fadeDuration: 10
   disableAfterFade: 1
 --- !u!225 &2013807831
 CanvasGroup:

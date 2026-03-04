@@ -407,7 +407,7 @@ Transform:
   m_GameObject: {fileID: 115814356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -63.1, y: 0, z: 0}
+  m_LocalPosition: {x: -58.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1226,9 +1226,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sadness becomes lighter
+  m_text: 'Sadness becomes easier to carry
 
-    when it is allowed to surface and be processed.'
+    when we understand it.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -1580,7 +1580,7 @@ Transform:
   m_GameObject: {fileID: 487216189}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -176.3, y: 0.23000002, z: -10}
+  m_LocalPosition: {x: -173.8, y: 0.23000002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1718,7 +1718,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -176.3, y: 0.23000002, z: -10}
+  m_LocalPosition: {x: -173.8, y: 0.23000002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2058,20 +2058,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Ocean is based on emotional processing theory.
-
-
-    Unresolved experiences
-    create emotional heaviness.
-
-
-    By collecting and releasing fragments,
-
-    the
-    player symbolically processes memories.
-
-
-    Clarity emerges through acceptance.'
+  m_text: "The Ocean shows emotional processing.\r\n\rAcknowledging feelings helps
+    us\r\nmove forward."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -4183,11 +4171,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Level 3 \u2013 The Ocean\r\nThis level represents Sadness.\r\nThe deep
-    water symbolizes emotional weight.\r\nPsychological research shows that\r\nsuppressing
-    sadness prolongs it.\r\nCollecting memory fragments represents\r\nacknowledging
-    emotional experiences.\r\nAs memories are processed,\r\nthe environment becomes
-    clearer."
+  m_text: "Level 3 \u2013 The Ocean\r\n\rThis ocean represents sadness.\r\n\rThe
+    deep water shows emotional weight.\r\nThe glowing fragments are memories.\r\n\rWhen
+    we allow feelings to surface,\r\nsadness becomes lighter."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -4214,8 +4200,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75
-  m_fontSizeBase: 75
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4290,7 +4276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486debddd64e65342a5571e8ea327ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 8
+  fadeDuration: 5
   disableAfterFade: 1
 --- !u!1 &1100297334
 GameObject:
@@ -6882,6 +6868,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1799689217
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 321.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -22.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2777078
+      objectReference: {fileID: 0}
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 930510085094586581, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370908513831242127, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
+      propertyPath: m_Name
+      value: Light Bridge
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8185bc6ece1c70a40a42c6686237bd73, type: 3}
 --- !u!1 &1836504396
 GameObject:
   m_ObjectHideFlags: 0
@@ -39372,7 +39415,7 @@ Transform:
   m_GameObject: {fileID: 8853461538988979252}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -184.3, y: -7.77, z: 0}
+  m_LocalPosition: {x: -181.8, y: -7.77, z: 0}
   m_LocalScale: {x: 0.96559924, y: 1.23538, z: 0.12040111}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39632,3 +39675,4 @@ SceneRoots:
   - {fileID: 1931279538}
   - {fileID: 1238469712}
   - {fileID: 8953909733780666667}
+  - {fileID: 1799689217}
