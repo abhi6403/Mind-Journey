@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MindJourneyLogo.png_0: 8960828153900897900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
