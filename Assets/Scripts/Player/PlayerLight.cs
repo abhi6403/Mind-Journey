@@ -18,7 +18,7 @@ public class PlayerLight : MonoBehaviour
         }
     }
 
-    void EmitLight()
+    public void EmitLight()
     {
         if (lightSound != null)
         {

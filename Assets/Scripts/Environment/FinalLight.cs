@@ -9,7 +9,7 @@ public class FinalLight : MonoBehaviour
         {
             Debug.Log("Final light reached.");
 
-            SceneManager.LoadScene("Ending");
+            SceneManager.LoadScene("EndingScene");
         }
     }
 }

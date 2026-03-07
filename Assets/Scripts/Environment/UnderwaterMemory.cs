@@ -47,7 +47,7 @@ public class UnderwaterMemory : MonoBehaviour
         }
     }
 
-    void ReleaseMemories()
+   public void ReleaseMemories()
     {
         if (currentWeight <= 0f) return;
 
