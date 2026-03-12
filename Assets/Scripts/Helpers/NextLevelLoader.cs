@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LightBridge : MonoBehaviour
+public class NextLevelLoader : MonoBehaviour
 {
     private Animator animator;
     public string sceneToLoad;
@@ -12,8 +11,6 @@ public class LightBridge : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         col = GetComponent<BoxCollider2D>();
-
-        col.enabled = false;
     }
 
     public void ActivateBridge()
