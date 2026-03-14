@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
 
     public void PlayAgain()
     {
-        SceneManager.LoadScene("Level_AnxietyForest");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
