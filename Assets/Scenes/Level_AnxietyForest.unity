@@ -275,6 +275,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
+      propertyPath: whisperAudio
+      value: 
+      objectReference: {fileID: 652164071}
+    - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
       objectReference: {fileID: 8300000, guid: b1c0fa5a0972d8a408747d51a7e3fc00, type: 3}
@@ -282,7 +286,8 @@ PrefabInstance:
       propertyPath: progressionManager
       value: 
       objectReference: {fileID: 1464116099}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1576611766634981571, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3438,6 +3443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 652164070}
+  - component: {fileID: 652164071}
   m_Layer: 0
   m_Name: Trees
   m_TagString: Untagged
@@ -3465,6 +3471,103 @@ Transform:
   - {fileID: 1939303221}
   m_Father: {fileID: 696290926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &652164071
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652164069}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &683628905
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,6 +3936,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
+      propertyPath: whisperAudio
+      value: 
+      objectReference: {fileID: 652164071}
+    - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
       objectReference: {fileID: 8300000, guid: 5a0b1596d4119e14c998911d7bbbddff, type: 3}
@@ -3840,7 +3947,8 @@ PrefabInstance:
       propertyPath: progressionManager
       value: 
       objectReference: {fileID: 1464116099}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1576611766634981571, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3919,6 +4027,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
+      propertyPath: whisperAudio
+      value: 
+      objectReference: {fileID: 652164071}
+    - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
       objectReference: {fileID: 8300000, guid: 7d1bad83fddd74e48b73ddf68766a9b9, type: 3}
@@ -3926,7 +4038,8 @@ PrefabInstance:
       propertyPath: progressionManager
       value: 
       objectReference: {fileID: 1464116099}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1576611766634981571, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9620,6 +9733,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
+      propertyPath: whisperAudio
+      value: 
+      objectReference: {fileID: 652164071}
+    - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
       objectReference: {fileID: 8300000, guid: 40fb0e8f5c7e95a489ddbec0082f676c, type: 3}
@@ -9627,7 +9744,8 @@ PrefabInstance:
       propertyPath: progressionManager
       value: 
       objectReference: {fileID: 1464116099}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1576611766634981571, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11399,6 +11517,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
+      propertyPath: whisperAudio
+      value: 
+      objectReference: {fileID: 652164071}
+    - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
       objectReference: {fileID: 8300000, guid: 64d04af9436af894895f340799f3b090, type: 3}
@@ -11406,7 +11528,8 @@ PrefabInstance:
       propertyPath: progressionManager
       value: 
       objectReference: {fileID: 1464116099}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1576611766634981571, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

@@ -18,7 +18,7 @@ public class WhisperTree : MonoBehaviour, IInteractable
     public AudioClip healedClip;
 
     private Animator animator;
-    private AudioSource whisperAudio;
+    public AudioSource whisperAudio;
     private bool playerInside = false;
     private bool healed = false;
 
@@ -27,7 +27,6 @@ public class WhisperTree : MonoBehaviour, IInteractable
     void Start()
     {
         animator = GetComponent<Animator>();
-        whisperAudio = GetComponent<AudioSource>();
 
         if (objectToAppear != null)
         {
