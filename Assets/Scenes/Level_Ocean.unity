@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741f30960d63a984c904285d23069b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movePower: 0
+  movePower: 1
   jumpPower: 15
   leftButton: {fileID: 6176651909179839746}
   rightButton: {fileID: 2714401211783068240}
@@ -5946,7 +5946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ece5039e99fb64cbce2d42942ad68d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 20
+  moveForce: 30
   maxSpeed: 15
   verticalForce: 25
   drag: 5
