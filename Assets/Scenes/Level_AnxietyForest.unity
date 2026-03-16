@@ -269,7 +269,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healedClip
       value: 
-      objectReference: {fileID: 8300000, guid: 765c6276cc32019479fc143ec9566798, type: 3}
+      objectReference: {fileID: 8300000, guid: 7db96adb4025de8498ba1309217d21b2, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healingClip
       value: 
@@ -281,7 +281,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
-      objectReference: {fileID: 8300000, guid: b1c0fa5a0972d8a408747d51a7e3fc00, type: 3}
+      objectReference: {fileID: 8300000, guid: f50b9c71a6032c146a97a375d305d4d4, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: progressionManager
       value: 
@@ -3930,7 +3930,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healedClip
       value: 
-      objectReference: {fileID: 8300000, guid: 63ae6d291ad29e14bb364b110ec59285, type: 3}
+      objectReference: {fileID: 8300000, guid: 44b0be2d07751744697864fd1eb1cea8, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healingClip
       value: 
@@ -3942,7 +3942,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5a0b1596d4119e14c998911d7bbbddff, type: 3}
+      objectReference: {fileID: 8300000, guid: fa12bffd6cc74eb4fabf33af28f7ef11, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: progressionManager
       value: 
@@ -4021,7 +4021,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healedClip
       value: 
-      objectReference: {fileID: 8300000, guid: 27dc2bf9f4d188d44b9b66a89ca5eb1e, type: 3}
+      objectReference: {fileID: 8300000, guid: 54e2f66042c68da408873ea9979764e7, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healingClip
       value: 
@@ -4033,7 +4033,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
-      objectReference: {fileID: 8300000, guid: 7d1bad83fddd74e48b73ddf68766a9b9, type: 3}
+      objectReference: {fileID: 8300000, guid: 43bc837b929b16f419856a188390ee95, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: progressionManager
       value: 
@@ -9727,7 +9727,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healedClip
       value: 
-      objectReference: {fileID: 8300000, guid: 765c6276cc32019479fc143ec9566798, type: 3}
+      objectReference: {fileID: 8300000, guid: 8c41162b43670944aa9b8317146c81f3, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healingClip
       value: 
@@ -9739,7 +9739,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
-      objectReference: {fileID: 8300000, guid: 40fb0e8f5c7e95a489ddbec0082f676c, type: 3}
+      objectReference: {fileID: 8300000, guid: f14aeb1d2763e08479910f2158731b44, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: progressionManager
       value: 
@@ -11511,7 +11511,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healedClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5c578568311fd03469df31d9623aa50a, type: 3}
+      objectReference: {fileID: 8300000, guid: ca6567e00d3944043a68924082871bb9, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: healingClip
       value: 
@@ -11523,7 +11523,7 @@ PrefabInstance:
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: triggerEnterClip
       value: 
-      objectReference: {fileID: 8300000, guid: 64d04af9436af894895f340799f3b090, type: 3}
+      objectReference: {fileID: 8300000, guid: 8da2d934d0fdac44f84fb0a278d1957e, type: 3}
     - target: {fileID: 5822879226705355268, guid: 12b195fa9ed493b43b229050fb20fd3f, type: 3}
       propertyPath: progressionManager
       value: 

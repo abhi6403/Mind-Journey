@@ -150,14 +150,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textObject: {fileID: 540696861}
   messages:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  textDuration: 3
-  fadeDuration: 1
+  - "\u201CEvery mind carries silent battles we rarely talk about.\u201D"
+  - "\u201CFear, anxiety, and doubt can turn our thoughts into obstacles.\u201D"
+  - "\u201CBut every step forward helps us understand ourselves better.\u201D"
+  - "\u201CWhen we face our emotions, healing slowly begins.\u201D"
+  - "\u201CBecause every mind deserves peace, hope, and light.\u201D"
+  - "\u201CNo matter how heavy the mind feels,\r\nthere is always a path back to
+    the light.\u201D\nThank you for playing\r\nMind Journey..."
+  textDuration: 3.5
+  fadeDuration: 1.2
   objectToUnlock: {fileID: 1161907242}
 --- !u!4 &189486523
 Transform:
